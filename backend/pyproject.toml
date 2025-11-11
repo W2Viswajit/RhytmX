@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "rhytmx-backend"
+version = "0.1.0"
+description = "RhytmX FastAPI backend for algorithmic music discovery"
+authors = ["You <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+fastapi = "^0.115.0"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+pydantic = "^2.9.2"
+numpy = "^1.26.4"
+pandas = "^2.2.3"
+scikit-learn = "^1.5.2"
+librosa = "^0.10.2.post1"
+psycopg2-binary = "^2.9.9"
+SQLAlchemy = "^2.0.35"
+alembic = "^1.13.3"
+python-dotenv = "^1.0.1"
+mlxtend = "^0.23.1"
+motor = "^3.6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
